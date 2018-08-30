@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="gccoffeeshopModelStoreContainer" CdmEntityContainer="gccoffeeshopEntities">
+    <EntitySetMapping Name="items">
+      <EntityTypeMapping TypeName="gccoffeeshopModel.item">
+        <MappingFragment StoreEntitySet="items">
+          <ScalarProperty Name="itemid" ColumnName="itemid" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="price" ColumnName="price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

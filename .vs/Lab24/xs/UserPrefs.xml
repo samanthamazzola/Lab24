@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{FFD78FB3-8536-41F4-9072-F8BC6D200810}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Lab24/Views/Home/Index.cshtml">
+    <Files>
+      <File FileName="Lab24/Controllers/HomeController.cs" Line="95" Column="54" />
+      <File FileName="Lab24/Views/Home/Index.cshtml" Line="17" Column="9" />
+      <File FileName="Lab24/Views/Home/NewItem.cshtml" Line="18" Column="1" />
+      <File FileName="Lab24/Views/Home/ItemDetails.cshtml" Line="11" Column="45" />
+      <File FileName="Lab24/Models/item.cs" Line="15" Column="26" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Lab24 PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

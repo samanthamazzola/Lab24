@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "NewItem";
+}
+<br />
+<br />
+<h2>Add a new Item</h2>
+<br />
+<br />
+<form action="/Home/SaveNewItem" method="post">
+    <label>Name: </label><input type="text" name="name" class="form-control" placeholder="item name here" />
+    <label>Description: </label><input type="text" name="description" class="form-control" placeholder="description"/>
+    <label>Quantity: </label><input type="number" min="1" max="20" name="quantity" class="form-control" />
+    <label>Price: </label><input type="number" step=".01" name="price" class="form-control" />
+    <input type="submit" value="Save!" class="form-control"/>
+</form>
+

@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<br />
+<br />
+<form action="/Home/SearchItemByName" method="get">
+    <label class="form-control col-sm-2">Item Name</label>
+    <input type="text" name="name" class="form-control" />
+    <input type="submit" value="Search"/>
+</form>
+
+<br />
+<a href="/Home/NewItem">Add new item</a>
+<br />
+<br />
+<table class="table" border="1">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Quantity</th>
+        <th>Price</th>
+    </tr>
+    @foreach (var item in ViewBag.Items)  //viewbag way to move data from controller to the view
+    {
+    <tr>
+        <td>@item.name</td>
+        <td>@item.description</td>
+        <td>@item.quantity</td>
+        <td>@item.price</td>
+        <td><a href="/Home/DeleteItem?itemid=@item.itemid" onclick="return confirm('Are you sure?')">Delete</a></td>
+        <td><a href="/Home/ItemDetails?itemid=@item.itemid">Edit</a></td>
+    </tr>
+    }
+
+
+
+</table>

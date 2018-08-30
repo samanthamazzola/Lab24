@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "ItemDetails";
+}
+<br />
+<br />
+<h2>Edit Item</h2>
+<br />
+<br />
+<form action="/Home/SaveChanges" method="post">
+    <input type="hidden" name="itemid" value="@ViewBag.ItemToEdit.name"/>
+    <label>Name: </label><input type="text" name="name" class="form-control" placeholder="item name here" value="@ViewBag.ItemToEdit.name" />
+    <label>Description: </label><input type="text" name="description" class="form-control" placeholder="description" value="@ViewBag.ItemToEdit.description" />
+    <label>Quantity: </label><input type="number" min="1" max="20" name="quantity" class="form-control" value="@ViewBag.ItemToEdit.quantity"/>
+    <label>Price: </label><input type="number" step=".01" name="price" class="form-control" value="@ViewBag.ItemToEdit.price" />
+    <input type="submit" value="Save Changes" class="form-control" />
+    <input type="reset" />
+</form>
+
